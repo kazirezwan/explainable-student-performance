@@ -1,0 +1,58 @@
+{
+  "pass_rate": 0.4735,
+  "logistic_regression": {
+    "top_features": {
+      "quiz_avg": 0.888,
+      "assignments_rate": 0.622,
+      "attendance_rate": 0.568,
+      "late_submissions": 0.504,
+      "has_personal_computer": 0.36
+    },
+    "spearman_vs_truth": 0.976,
+    "irrelevant_features_rank": {
+      "seat_row": 9,
+      "birth_month": 10
+    }
+  },
+  "gradient_boosting": {
+    "top_features": {
+      "quiz_avg": 0.872,
+      "assignments_rate": 0.721,
+      "attendance_rate": 0.517,
+      "practice_hours": 0.355,
+      "late_submissions": 0.348
+    },
+    "spearman_vs_truth": 0.982,
+    "irrelevant_features_rank": {
+      "seat_row": 9,
+      "birth_month": 10
+    }
+  },
+  "flagged_student": {
+    "p_pass": 0.005,
+    "features": {
+      "quiz_avg": 25.78,
+      "assignments_rate": 0.29,
+      "attendance_rate": 0.63,
+      "practice_hours": 0.5,
+      "prior_digital_literacy": 1.0,
+      "lms_logins_per_week": 4.0,
+      "late_submissions": 4.0,
+      "has_personal_computer": 0.0,
+      "seat_row": 4.0,
+      "birth_month": 3.0
+    },
+    "shap": {
+      "quiz_avg": -1.324,
+      "practice_hours": -1.009,
+      "assignments_rate": -0.952,
+      "late_submissions": -0.735,
+      "attendance_rate": -0.325,
+      "seat_row": -0.192,
+      "has_personal_computer": -0.176,
+      "prior_digital_literacy": -0.167,
+      "birth_month": -0.083,
+      "lms_logins_per_week": -0.066
+    }
+  }
+}
